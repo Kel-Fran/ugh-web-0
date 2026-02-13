@@ -1,0 +1,26 @@
+{
+  "name": "idojaras-vanodaniel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsx src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kel-Fran/ugh-web-0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kel-Fran/ugh-web-0/issues"
+  },
+  "homepage": "https://github.com/Kel-Fran/ugh-web-0#readme",
+  "description": "",
+  "dependencies": {
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3"
+  }
+}
