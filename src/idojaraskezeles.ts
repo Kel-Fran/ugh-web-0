@@ -16,6 +16,10 @@ export async function maiidojaras() {
 export async function beolvas() {
     return (await fs.readFile(path.join(__filename, '..', '..', 'idojaras.csv'), { encoding: 'utf-8' })).trim().split('\n').slice(1).map(it => {
         const [day, min, max, weather] = it.trim().split(';');
+        try {
         return new Napidojaras(+day as Day, +min, +max, weather);
-    });
+        } catch (_) {
+            return null;
+        }
+    }).filter(it => !!it);
 }
